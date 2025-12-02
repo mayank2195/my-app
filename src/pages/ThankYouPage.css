@@ -1,0 +1,33 @@
+/* Define the bouncing animation */
+@keyframes pulseBounce {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+    50% {
+        /* Scale ko 1.1 se badhakar 1.3 kar diya */
+        transform: scale(1.3) translateY(-10px); 
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+.distance{
+    margin-bottom: 50px;
+}
+.hurray-icon {
+    /* Font size ko 80px se badhakar 120px kar diya */
+    font-size: 120px; 
+    margin-bottom: 20px;
+    
+    /* Animation duration ko 1s se badhakar 0.8s kar diya 
+       aur tez dikhe aur zor se bounce kare */
+    animation: pulseBounce 0.8s infinite alternate; 
+    display: inline-block; 
+}
+.text{
+    font-size: larger;
+}
+/* Text animation ko waise hi rehne de sakte hain ya use bhi change kar sakte hain */
+.hurray-text {
+    animation: pulseBounce 2s infinite alternate; 
+}
