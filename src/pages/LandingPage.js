@@ -35,7 +35,7 @@ const handleSubmit = async (e) => {
         {/* LEFT SIDE */}
         <div className="landing-left">
           <div className="logo-text">
-            <img src="/rhino-kart.png" alt="Rhinokart Logo" />
+            <img src={`${process.env.PUBLIC_URL}/rhino-kart.png`} alt="" />
             <span>Rhino Kart</span>
           </div>
 
@@ -44,9 +44,9 @@ const handleSubmit = async (e) => {
           </p>
 
           <div className="left-images">
-            <img src="/tshirt.png" alt="Shirt" />
-            <img src="/shoes.png" alt="Shoes" />
-            <img src="/purse.png" alt="Purse" />
+            <img src={`${process.env.PUBLIC_URL}/tshirt.png`} alt="" />
+            <img src={`${process.env.PUBLIC_URL}/shoes.png`} alt="" />
+            <img src={`${process.env.PUBLIC_URL}/purse.png`} alt="" />
           </div>
         </div>
 
